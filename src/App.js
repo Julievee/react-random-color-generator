@@ -33,7 +33,7 @@ export default function App() {
         }}
       >
         <h2>
-          Generate Color:
+          Generate
           <br />
           {color}
         </h2>
