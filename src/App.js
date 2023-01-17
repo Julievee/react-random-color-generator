@@ -19,8 +19,7 @@ export default function App() {
       }}
     >
       {/* Creating and styling button */}
-
-      <h1>Random Color Generator</h1>
+      <h1>Generate Random Color</h1>
       <button
         onClick={() => {
           setColor(randomColor());
@@ -33,7 +32,11 @@ export default function App() {
           borderRadius: '18px',
         }}
       >
-        Generate {color}
+        <h2>
+          Generated Color:
+          <br />
+          {color}
+        </h2>
       </button>
       <div />
     </div>
