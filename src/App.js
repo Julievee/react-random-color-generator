@@ -20,7 +20,9 @@ export default function App() {
     >
       {/* Creating and styling button */}
       <h1>Random Color Generator</h1>
-      <h2>Generated Color: {color}</h2>
+      <div>
+        <h2>Generated Color: {color}</h2>
+      </div>
       <button
         style={{
           backgroundColor: color,
@@ -35,7 +37,6 @@ export default function App() {
       >
         Generate
       </button>
-      <div />
     </div>
   );
 }
