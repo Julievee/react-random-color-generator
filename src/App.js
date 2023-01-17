@@ -33,7 +33,7 @@ export default function App() {
           borderRadius: '18px',
         }}
       >
-        <h2>Generated Color: {color}</h2>
+        <h2>Generate {color}</h2>
       </button>
       <div />
     </div>
