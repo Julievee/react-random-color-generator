@@ -19,7 +19,7 @@ export default function App() {
       }}
     >
       {/* Creating and styling button */}
-      <h1>Generate Random Color</h1>
+      <h1>Random Color Generator</h1>
       <button
         onClick={() => {
           setColor(randomColor());
@@ -33,7 +33,7 @@ export default function App() {
         }}
       >
         <h2>
-          Generated Color:
+          Generate Color:
           <br />
           {color}
         </h2>
