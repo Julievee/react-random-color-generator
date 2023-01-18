@@ -20,8 +20,12 @@ export default function App() {
     >
       {/* Creating and styling button */}
       <h1>Random Color Generator</h1>
-      <div>
-        <h2>Generated Color: {color}</h2>
+      <div
+        style={{
+          fontSize: '12px',
+        }}
+      >
+        Generated Color: {color}
       </div>
       <button
         style={{
