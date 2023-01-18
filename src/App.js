@@ -1,9 +1,12 @@
-import randomColor from 'randomcolor';
 import { useState } from 'react';
 
 // Declaring a state variable called "color", with the default value randomColor
 export default function App() {
-  const [backgroundColor, setBackgroundColor] = useState(randomColor());
+  const [backgroundColor, setBackgroundColor] = useState('#ffffff');
+  const randombackgroundColor = () => {
+    const hex = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    setBackgroundColor(hex);
+  };
 
   // Website layout
   return (
@@ -40,9 +43,7 @@ export default function App() {
           border: '2px solid black',
           borderRadius: '18px',
         }}
-        onClick={() => {
-          setBackgroundColor(randomColor());
-        }}
+        onClick={randombackgroundColor}
       >
         Generate
       </button>
