@@ -1,4 +1,3 @@
-import './App.css';
 import randomColor from 'randomcolor';
 import { useState } from 'react';
 
@@ -11,11 +10,13 @@ export default function App() {
     <div
       style={{
         backgroundColor: color,
-        flex: 1,
+        margin: '0',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
         textAlign: 'center',
-        padding: '200px',
         justifyContent: 'center',
-        height: '60vh',
+        height: '100vh',
       }}
     >
       {/* Creating and styling button */}
@@ -23,8 +24,9 @@ export default function App() {
       <div
         style={{
           fontSize: '18px',
-          padding: '20px',
+          padding: '14px',
           fontWeight: 'bold',
+          fontColor: 'black',
         }}
       >
         Generated Color: {color}
