@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 // Declaring a state variable called "color", with the default value randomColor
 export default function App() {
-  const [color, setColor] = useState(randomColor());
+  const [color, setColor] = useState(randomColor(''));
 
   // Website layout
   return (
@@ -17,6 +17,7 @@ export default function App() {
         textAlign: 'center',
         justifyContent: 'center',
         height: '100vh',
+        transition: 'background-color 0.4s ease-out',
       }}
     >
       {/* Creating and styling button */}
