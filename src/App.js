@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 // Declaring a state variable called "color", with the default value randomColor
 export default function App() {
-  const [color, setColor] = useState(randomColor('#00000000'));
+  const [color, setColor] = useState(randomColor());
 
   // Website layout
   return (
@@ -33,9 +33,9 @@ export default function App() {
       </div>
       <button
         style={{
-          backgroundColor: color,
+          backgroundColor: 'white',
           width: 100,
-          height: 80,
+          height: 60,
           border: '2px solid black',
           borderRadius: '18px',
         }}
