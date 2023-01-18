@@ -22,7 +22,9 @@ export default function App() {
       <h1>Random Color Generator</h1>
       <div
         style={{
-          fontSize: '12px',
+          fontSize: '18px',
+          padding: '20px',
+          fontWeight: 'bold',
         }}
       >
         Generated Color: {color}
