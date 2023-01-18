@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 // Declaring a state variable called "color", with the default value randomColor
 export default function App() {
-  const [color, setColor] = useState(randomColor());
+  const [color, setColor] = useState(randomColor('#00000000'));
 
   // Website layout
   return (
