@@ -3,13 +3,13 @@ import { useState } from 'react';
 
 // Declaring a state variable called "color", with the default value randomColor
 export default function App() {
-  const [color, setColor] = useState(randomColor(''));
+  const [backgroundColor, setBackgroundColor] = useState(randomColor());
 
   // Website layout
   return (
     <div
       style={{
-        backgroundColor: color,
+        backgroundColor: backgroundColor,
         margin: '0',
         display: 'flex',
         flexDirection: 'column',
@@ -30,7 +30,7 @@ export default function App() {
           fontColor: 'black',
         }}
       >
-        Generated Color: {color}
+        Generated Color: {backgroundColor}
       </div>
       <button
         style={{
@@ -41,7 +41,7 @@ export default function App() {
           borderRadius: '18px',
         }}
         onClick={() => {
-          setColor(randomColor());
+          setBackgroundColor(randomColor());
         }}
       >
         Generate
