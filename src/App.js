@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 // Declaring a state variable called "color", with the default value randomColor
 export default function App() {
-  const [backgroundColor, setBackgroundColor] = useState('#ffffff');
+  const [backgroundColor, setBackgroundColor] = useState('');
   const randombackgroundColor = () => {
     const hex = '#' + Math.floor(Math.random() * 16777215).toString(16);
     setBackgroundColor(hex);
@@ -33,7 +33,8 @@ export default function App() {
           fontColor: 'black',
         }}
       >
-        Generated Color: {backgroundColor}
+        Generated Color: {randombackgroundColor}
+        {backgroundColor}
       </div>
       <button
         style={{
