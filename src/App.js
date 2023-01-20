@@ -30,7 +30,8 @@ export default function App() {
           fontColor: 'black',
         }}
       >
-        Generated Color: {backgroundColor}
+        <div>Generated Color:</div>
+        {backgroundColor}
       </div>
       <button
         style={{
